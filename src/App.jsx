@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
-import Skills from './components/Skills/Skills'
+import Skills from './components/Skills/skills'
 import Projects from './components/Projects/Projects'
 import GetInTouch from './components/GetInTouch/GetInTouch'
 
