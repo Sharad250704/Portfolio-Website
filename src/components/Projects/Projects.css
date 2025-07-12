@@ -1,0 +1,116 @@
+.projects-section {
+  margin: 60px auto;
+  text-align: center;
+  max-width: 1100px;
+  width: 95vw;
+}
+.projects-section h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(276deg,#DA7C25 0.36%,#B923E1 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  display: inline-block; /* Add this line */
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-card {
+  background: linear-gradient(120deg, #fff 60%, #f3e7ff 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(180,21,255,0.10), 0 1.5px 8px rgba(223,137,8,0.08);
+  padding: 30px 25px;
+  width: 320px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  color: #2d1b3b;
+  border: 1.5px solid #DF8908;
+  margin-bottom: 32px;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 32px rgba(180,21,255,0.18), 0 3px 16px rgba(223,137,8,0.15);
+  border-color: #B415FF;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #B415FF;
+}
+
+.project-card p {
+  margin-bottom: 24px; /* Increased gap below project description */
+  color: #4a2c6b;
+  font-size: 1rem;
+  min-height: 48px;
+  word-break: break-word;
+}
+
+.project-links {
+  display: flex;
+  gap: 18px;
+  margin-top: auto;
+}
+
+.project-links a {
+  color: #fff;
+  background: linear-gradient(264deg,#DF8908 0%,#B415FF 100%);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  display: inline-block;
+  box-shadow: 0 1px 6px rgba(180,21,255,0.08);
+}
+
+.project-links a:hover {
+  background: #fff;
+  color: #B415FF;
+  border: 1px solid #B415FF;
+}
+
+@media (max-width: 900px) {
+  .projects-list {
+    gap: 18px;
+  }
+  .project-card {
+    width: 240px;
+    padding: 18px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .project-card {
+    width: 95vw;
+    min-width: unset;
+    max-width: 98vw;
+    padding: 14px 6px;
+  }
+}
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  object-fit: cover;
+  max-height: 200px;
+}
