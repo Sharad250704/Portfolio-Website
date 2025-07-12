@@ -21,7 +21,7 @@ const Hero = () => {
             document.getElementById("get-in-touch")?.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          Connect with me hello
+          Connect with me 
         </div>
 
         <a className="hero-resume" href="/Sharad_Pandey_resume.pdf" download>
